@@ -8,20 +8,34 @@ html
     meta(name='csrf-token', content=_csrf)
     title #{title} - Hackathon Starter
     link(rel='shortcut icon', href='/favicon.png')
-    link(rel='stylesheet', href='/css/main.css')
+    //- link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/css/lib/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css')
 
-  body
-    include partials/header
+    // Helios
+    link(rel='stylesheet', href='/css/themes/helios/main.css')
 
-    .container
-      include partials/flash
-      block content
+  body.homepage
+    //- include partials/header
+
+    //- .container
+    include partials/flash
+    block content
 
     include partials/footer
 
     script(src='/js/lib/jquery-2.2.4.min.js')
     script(src='/js/lib/bootstrap.min.js')
     script(src='/js/main.js')
+
+    // Helios
+    // Scripts
+    script(src='/js/helios/jquery.min.js')
+    script(src='/js/helios/jquery.dropotron.min.js')
+    script(src='/js/helios/jquery.scrolly.min.js')
+    script(src='/js/helios/jquery.onvisible.min.js')
+    script(src='/js/helios/skel.min.js')
+    script(src='/js/helios/util.js')
+    script(src='/js/helios/main.js')
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID
     script.

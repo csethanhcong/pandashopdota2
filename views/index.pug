@@ -1,0 +1,193 @@
+extends layout
+
+block content
+    #page-wrapper
+      // Header
+      #header
+        #video-container
+          video.fillWidth(autoplay='true', loop='true')
+            source(src='../videos/dota2_bg_video.mp4', type='video/mp4')
+            | Your browser does not support the video tag. I suggest you upgrade your browser.
+
+        // Inner
+        .inner
+          header
+            h1
+              a#logo(href='#') Pandashop
+            hr
+            p We provide a variety of services to increase your rank in Dota 2. 
+            p MMR Boosting, Calibration, Coaching & More.
+          footer
+            a.button.circled.scrolly(href='#banner') Start
+        // Nav
+        nav#nav
+          ul
+            li
+              a(href='index.html') Home
+            li
+              a(href='#') Dropdown
+              ul
+                li
+                  a(href='#') Lorem ipsum dolor
+                li
+                  a(href='#') Magna phasellus
+                li
+                  a(href='#') Etiam dolore nisl
+                li
+                  a(href='#') And a submenu …
+                  ul
+                    li
+                      a(href='#') Lorem ipsum dolor
+                    li
+                      a(href='#') Phasellus consequat
+                    li
+                      a(href='#') Magna phasellus
+                    li
+                      a(href='#') Etiam dolore nisl
+                li
+                  a(href='#') Veroeros feugiat
+            li
+              a(href='left-sidebar.html') Left Sidebar
+            li
+              a(href='right-sidebar.html') Right Sidebar
+            li
+              a(href='no-sidebar.html') No Sidebar
+      // Banner
+      section#banner
+        header
+          h2
+            | Hi. You're looking at 
+            strong Helios
+            | .
+          p
+            | A (free) responsive site template by 
+            a(href='http://html5up.net') HTML5 UP
+            | .
+            |               Built on 
+            strong skel
+            |  and released under the 
+            a(href='http://html5up.net/license') CCA
+            |  license.
+      // Carousel
+      section.carousel
+        .reel
+          article
+            a.image.featured(href='#')
+              img(src='images/dota2.jpg', alt='')
+              .ribbon
+                span $100
+              h4.price-ribbon.solo-mmr-ribbon
+                span
+                  i.fa.fa-user-o.mmr-ribbon
+                  | 9000
+              h4.price-ribbon.party-mmr-ribbon
+                span
+                  i.fa.fa-users.mmr-ribbon
+                  | 6000
+            header
+              h3
+                a(href='#') Fermentum sagittis proin
+            p Commodo id natoque malesuada sollicitudin elit suscipit magna.
+          article
+            a.image.featured(href='#')
+              img(src='images/dota2.jpg', alt='')
+              .ribbon
+                span $100
+              h4.price-ribbon.solo-mmr-ribbon
+                span
+                  i.fa.fa-user-o.mmr-ribbon
+                  | 9000
+              h4.price-ribbon.party-mmr-ribbon
+                span
+                  i.fa.fa-users.mmr-ribbon
+                  | 6000
+            header
+              h3
+                a(href='#') Fermentum sagittis proin
+            p Commodo id natoque malesuada sollicitudin elit suscipit magna.
+          article
+            a.image.featured(href='#')
+              img(src='images/dota2.jpg', alt='')
+              .ribbon
+                span $100
+              h4.price-ribbon.solo-mmr-ribbon
+                span
+                  i.fa.fa-user-o.mmr-ribbon
+                  | 9000
+              h4.price-ribbon.party-mmr-ribbon
+                span
+                  i.fa.fa-users.mmr-ribbon
+                  | 6000
+            header
+              h3
+                a(href='#') Fermentum sagittis proin
+            p Commodo id natoque malesuada sollicitudin elit suscipit magna.
+          article
+            a.image.featured(href='#')
+              img(src='images/dota2.jpg', alt='')
+              .ribbon
+                span $100
+              h4.price-ribbon.solo-mmr-ribbon
+                span
+                  i.fa.fa-user-o.mmr-ribbon
+                  | 9000
+              h4.price-ribbon.party-mmr-ribbon
+                span
+                  i.fa.fa-users.mmr-ribbon
+                  | 6000
+            header
+              h3
+                a(href='#') Fermentum sagittis proin
+            p Commodo id natoque malesuada sollicitudin elit suscipit magna.
+          article
+            a.image.featured(href='#')
+              img(src='images/dota2.jpg', alt='')
+              .ribbon
+                span $100
+              h4.price-ribbon.solo-mmr-ribbon
+                span
+                  i.fa.fa-user-o.mmr-ribbon
+                  | 9000
+              h4.price-ribbon.party-mmr-ribbon
+                span
+                  i.fa.fa-users.mmr-ribbon
+                  | 6000
+            header
+              h3
+                a(href='#') Fermentum sagittis proin
+            p Commodo id natoque malesuada sollicitudin elit suscipit magna.
+      // Features
+      .wrapper.style1
+        section#features.container.special
+          header
+            h2 Why Boost?
+            p
+              | Have you ever wished that you could play above your current bracket in Dota 2, but just can't find the time to level up your account? We can help you with that, that's exactly what a Dota 2 MMR boosting service is: our professional players will log into your account securely (so no one will ever notice it's not you that is playing!) and play with it until you reach your desired MMR!
+          .row
+            article(class='4u 12u(mobile) special')
+              a.image.featured(href='#')
+                img(src='images/dota2.jpg', alt='')
+              header
+                h3
+                  a(href='#') LIVE STREAM
+              p
+                | Watch and learn from our boosters by spectating their games live on 
+                | stream or from a smurf account.
+            article(class='4u 12u(mobile) special')
+              a.image.featured(href='#')
+                img(src='images/dota2.jpg', alt='')
+              header
+                h3
+                  a(href='#') ANONYMOUS
+              p
+                | We will use "appear as offline" status while boosting your account, 
+                | nobody will ever know that you are in Steam or playing Dota 2!
+            article(class='4u 12u(mobile) special')
+              a.image.featured(href='#')
+                img(src='images/dota2.jpg', alt='')
+              header
+                h3
+                  a(href='#') MATCH HISTORY
+              p
+                | Easily track your order progress. 
+                | Every match played by our booster will be stored in your personal area.
